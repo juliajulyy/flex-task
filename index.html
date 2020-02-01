@@ -11,63 +11,65 @@
 	</head>
 	<body> 
 
-		<main>
-			<section class="cart">
-				<div class="cart__order">
-					<h1 class="cart__header">YOUR CART</h1>
-					<div class="cart__goods">
-						<div class="cart__square">
-							<div class="in-right"></div>
-							<div class="in-left"></div>
+		<main class="page">
+			<div class="page__wrapper">
+				<section class="cart">
+					<div class="cart__order">
+						<h1 class="cart__header">YOUR CART</h1>
+						<div class="cart__goods">
+							<div class="cart__square">
+								<div class="in-right"></div>
+								<div class="in-left"></div>
+							</div>
+							<p class="cart__description">
+								Something text some text some text something text some text some text something text 
+							</p>
 						</div>
-						<p class="cart__description">
-							Something text some text some text something text some text some text something text 
-						</p>
+						<h4 class="cart__mini-header">Payment Options</h4>
+						<p class="cart__card-options">Card (fill out to right):</p>
+						<button class="cart__button-options">Paypal Button</button>
+						<button class="cart__button-options">In Store Pick-Up</button>
 					</div>
-					<h4 class="cart__mini-header">Payment Options</h4>
-					<p class="cart__card-options">Card (fill out to right):</p>
-					<button class="cart__button-options">Paypal Button</button>
-					<button class="cart__button-options">In Store Pick-Up</button>
-				</div>
-				<div class="cart__payment">
-					<figure class="cart__logo">
-						<img class="cart__icon" src="img/logo.png">
-					</figure>
-					<h2 class="cart__info-header"> Card Info</h2>
-					<form class="cart__body">	
-						<div class="cart__input">
-							<label class="cart__label">Name on Card:</label>
-							<input class="cart__field" required type="text" name="name">
-						</div>
-						<div class="cart__input">
-							<label class="cart__label">Adress for shipping:</label>
-							<input class="cart__field" required type="text" name="adress">
-						</div>
-						<div class="cart__input">
-							<label class="cart__label">Card Number:</label>
-							<input class="cart__field" required type="text" pattern="[0-9]{14,16}" name="number">
-						</div>
-						<div class="cart__input">
-							<label class="cart__label">Exp. Date:</label>
-							<input class="cart__field" required type="text" pattern="\d{2}+(\/\d{2})?" name="exp-date">
-						</div>
-						<div class="cart__input">
-							<label class="cart__label">CVV #(back of card):</label>
-							<input class="cart__field" required type="text" pattern="[0-9]{3}" name="cvv">
-						</div>
-					</form>
-				</div>
-			</section>
-			<section class="purchase">
-				<button>PURCHASE</button>
-				<p>Thanks for shopping with Music INC.!</p>
-			</section>
-			<section class="contact">
-				<p>Contact us:</p>
-				<button>Name</button>
-				<button>Phone</button>
-				<button>E-mail</button>
-			</section>
+					<div class="cart__payment">
+						<figure class="cart__logo">
+							<img class="cart__icon" src="img/logo.png">
+						</figure>
+						<h2 class="cart__info-header"> Card Info</h2>
+						<form class="cart__body">	
+							<div class="cart__input">
+								<label class="cart__label">Name on Card:</label>
+								<input class="cart__field" required type="text" name="name">
+							</div>
+							<div class="cart__input">
+								<label class="cart__label">Adress for shipping:</label>
+								<input class="cart__field" required type="text" name="adress">
+							</div>
+							<div class="cart__input">
+								<label class="cart__label">Card Number:</label>
+								<input class="cart__field" required type="text" pattern="[0-9]{14,16}" name="number">
+							</div>
+							<div class="cart__input">
+								<label class="cart__label">Exp. Date:</label>
+								<input class="cart__field" required type="text" pattern="\d{2}+(\/\d{2})?" name="exp-date">
+							</div>
+							<div class="cart__input">
+								<label class="cart__label">CVV #(back of card):</label>
+								<input class="cart__field" required type="text" pattern="[0-9]{3}" name="cvv">
+							</div>
+						</form>
+					</div>
+				</section>
+				<section class="purchase">
+					<button>PURCHASE</button>
+					<p>Thanks for shopping with Music INC.!</p>
+				</section>
+				<section class="contact">
+					<p>Contact us:</p>
+					<button>Name</button>
+					<button>Phone</button>
+					<button>E-mail</button>
+				</section>
+			</div>
 		</main>
 
 	</body>
