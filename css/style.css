@@ -4,5 +4,20 @@
 }
 
 .page__wrapper {
+	font-size: 40px;
 	max-width: 1000px;
+}
+
+.page__button {
+	background: white;
+	border: 2px solid black;
+	box-shadow: 5px 5px 5px black;
+	font-size: 0.45em;
+	padding: 4px 5px;
+	width: auto;
+}
+
+.page__button:hover {
+	box-shadow: none;
+	margin-left: 5px;
 }
