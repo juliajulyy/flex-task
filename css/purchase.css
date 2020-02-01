@@ -1,6 +1,6 @@
 .purchase {
 	display: flex;
-	align-content: center;
+	align-items: center;
 	justify-content: flex-end;
 	padding: 10px;
 }
@@ -9,6 +9,14 @@
 	font-weight: 600;
 }
 
+.purchase__button {
+	margin-right: 15px;
+}
+
+ .purchase__button:hover {
+	margin-right: 10px;
+}
+ 
 .purchase__message {
 	font-size: 0.7em;
 	margin-left: 30px;
