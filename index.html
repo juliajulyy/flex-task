@@ -30,25 +30,28 @@
 					<button class="cart__button-options">In Store Pick-Up</button>
 				</div>
 				<div class="cart__payment">
-					<img src="img/logo.png">
-					<h2> Card Info</h2>
+					<figure class="cart__logo">
+						<img class="cart__icon" src="img/logo.png">
+					</figure>
+					<h2 class="cart__info-header"> Card Info</h2>
 					<form class="cart__body">	
-						<div class="cart__row">
-							<label class="cart__label">Name of Card:</label>
+						<div class="cart__input">
+							<label class="cart__label">Name on Card:</label>
 							<input class="cart__field" required type="text" name="name">
-						<div class="cart__row">
+						</div>
+						<div class="cart__input">
 							<label class="cart__label">Adress for shipping:</label>
 							<input class="cart__field" required type="text" name="adress">
 						</div>
-						<div class="cart__row">
+						<div class="cart__input">
 							<label class="cart__label">Card Number:</label>
 							<input class="cart__field" required type="text" pattern="[0-9]{14,16}" name="number">
 						</div>
-						<div class="cart__row">
+						<div class="cart__input">
 							<label class="cart__label">Exp. Date:</label>
 							<input class="cart__field" required type="text" pattern="\d{2}+(\/\d{2})?" name="exp-date">
 						</div>
-						<div class="cart__row">
+						<div class="cart__input">
 							<label class="cart__label">CVV #(back of card):</label>
 							<input class="cart__field" required type="text" pattern="[0-9]{3}" name="cvv">
 						</div>
