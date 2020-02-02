@@ -1,1 +1,27 @@
-.contact {}
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.contact__header{
+	font-size: 0.6em;
+	padding-right: 10px;
+}
+
+ .contact__wrapper-btn {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+} 
+
+.contact__button {
+	padding: 0 80px;
+}
+
+.contact__button:hover {
+	position: relative;
+	left: 5px;
+}

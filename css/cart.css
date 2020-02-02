@@ -80,7 +80,8 @@
 }
 
 .cart__button-options:hover {
-	margin-left: 5px;
+	position: relative;
+	left: 5px;
 }
 
 .cart__payment {
@@ -117,7 +118,7 @@
 }
 
 .cart__label {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .cart__field {

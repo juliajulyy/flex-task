@@ -14,7 +14,8 @@
 }
 
  .purchase__button:hover {
-	margin-right: 10px;
+	position: relative;
+	left: 5px;
 }
  
 .purchase__message {
