@@ -1,11 +1,15 @@
 .page {
 	display: flex;
+	align-items: center;
 	justify-content: center;
+	height: 100vh;
 }
 
 .page__wrapper {
+	border: 3px solid black;
 	font-size: 40px;
 	max-width: 1200px;
+	padding: 20px;
 }
 
 .page__button {

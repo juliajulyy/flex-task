@@ -40,7 +40,7 @@
 
 .cart__square {
   position:relative;
-  border: 3px solid black; 
+  border: 2px solid black; 
   overflow:hidden;
   height: 70px;
   width: 70px;
@@ -49,7 +49,7 @@
 .in-right, .in-left {
 	position:absolute;
 	background:black;
-	height: 3px;
+	height: 2px;
 }
 
 .in-right {
@@ -88,11 +88,12 @@
 	padding-left: 30px;
 }
 
-.cart__logo, .cart__info-header, .cart__body {
+.cart__info-header, .cart__body {
 	margin: 10px 0;
 }
 
 .cart__logo {
+	margin: -30px 0 10px;
 	width: 100%; 
 }
 
