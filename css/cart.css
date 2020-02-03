@@ -46,18 +46,18 @@
   width: 70px;
 }
 
-.in-right, .in-left {
+.square__in-right, .square__in-left {
 	position:absolute;
 	background:black;
 	height: 2px;
 }
 
-.in-right {
+.square__in-right {
 	transform:skewY(-45deg);
 	width: 196%;	
 }
 
-.in-left {
+.square__in-left {
 	top: 34px;
   transform:skewY(45deg); 
   width: 100%;
@@ -77,11 +77,6 @@
 .cart__card-options {
 	font-size: 0.55em;
 	font-weight: 600;
-}
-
-.cart__button-options:hover {
-	position: relative;
-	left: 5px;
 }
 
 .cart__payment {

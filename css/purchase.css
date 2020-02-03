@@ -12,11 +12,6 @@
 .purchase__button {
 	margin-right: 15px;
 }
-
- .purchase__button:hover {
-	position: relative;
-	left: 5px;
-}
  
 .purchase__message {
 	font-size: 0.7em;

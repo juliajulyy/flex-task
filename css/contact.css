@@ -3,7 +3,6 @@
 	align-items: center;
 	justify-content: flex-end;
 	margin: 25px 15px 15px;
-	/*padding: 0 15px;*/
 }
 
 .contact__header{
@@ -19,9 +18,4 @@
 
 .contact__button {
 	padding: 0 80px;
-}
-
-.contact__button:hover {
-	position: relative;
-	left: 5px;
 }

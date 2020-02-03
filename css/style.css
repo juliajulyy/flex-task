@@ -23,4 +23,6 @@
 
 .page__button:hover {
 	box-shadow: none;
+	position: relative;
+	left: 5px;
 }
