@@ -19,3 +19,18 @@
 .contact__button {
 	padding: 0 80px;
 }
+
+@media screen and (max-width: 850px) {
+	.contact__button {
+		padding: 0 60px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.contact {
+		margin-top: 50px;
+	}
+	.contact__button {
+		padding: 0 30px;
+	}
+}

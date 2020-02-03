@@ -26,3 +26,19 @@
 	position: relative;
 	left: 5px;
 }
+
+@media screen and (max-width: 880px) {
+	.page__wrapper {
+		border-left: none;
+		border-right: none;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.page__wrapper {
+		border: 3px solid black;
+		margin: 20px;
+		margin-top: 375px;
+		max-width: 500px;
+	}
+}	
