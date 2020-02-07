@@ -2,7 +2,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	margin: 10px;
+	margin: .75em;
+}
+@media screen and (max-width: 800px) {
+	.purchase {
+		flex-direction: column;
+		margin-top: 0;
+	}
 }
 
 .purchase__button, .purchase__message{
@@ -10,25 +16,20 @@
 }
 
 .purchase__button {
-	margin-right: 15px;
+	margin-right: .375em;
+}
+@media screen and (max-width: 800px) {
+	.purchase__button {
+		margin-bottom: 1.5em;
+		margin-right: 0;
+	}
 }
  
 .purchase__message {
 	font-size: 0.7em;
 	margin-left: 30px;
 }
-
-@media screen and (max-width: 750px) {
-	.purchase {
-		flex-direction: column;
-		margin-top: 0;
-	}
-
-	.purchase__button {
-		margin-bottom: 20px;
-		margin-right: 0;
-	}
-
+@media screen and (max-width: 800px) {
 	.purchase__message {
 		margin-left: 0;
 	}

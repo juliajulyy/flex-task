@@ -2,12 +2,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	margin: 25px 15px 15px;
+	margin: .625em .875em .375em;
+}
+@media screen and (max-width: 800px) {
+	.contact {
+		justify-content: center;
+		margin-top: 1.25em;
+	}
 }
 
-.contact__header{
+.contact__header {
 	font-size: 0.6em;
-	padding-right: 10px;
+	padding-right: .25em;
 }
 
  .contact__wrapper-btn {
@@ -19,18 +25,18 @@
 .contact__button {
 	padding: 0 80px;
 }
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px){
 	.contact__button {
 		padding: 0 60px;
 	}
 }
-
-@media screen and (max-width: 750px) {
-	.contact {
-		margin-top: 50px;
-	}
+@media screen and (max-width: 800px) {
 	.contact__button {
-		padding: 0 30px;
+		padding: 0 25px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.contact__button {
+		padding: 0 25px;
 	}
 }

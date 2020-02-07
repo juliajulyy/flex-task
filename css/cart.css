@@ -1,6 +1,11 @@
 .cart {
 	display: flex;
-	padding: 30px;
+	padding: .75em;
+}
+@media screen and (max-width: 800px) {
+	.cart {
+		flex-direction: column;
+	}
 }
 
 .cart__order, .cart__payment {
@@ -10,164 +15,179 @@
 	justify-content: center;
 	width: 50%;
 }
+@media screen and (max-width: 800px) {
+	.cart__order, .cart__payment {
+		width: 100%;
+	}
+}
 
 .cart__order {
 	border-right: 2px solid black;
 	padding-right: 30px;
 }
+@media screen and (max-width: 800px){
+	.cart__order {
+		border-right: none;
+		padding-right: 0;
+	}
+}
 
 .cart__header, .cart__goods, 
 .cart__mini-header{
-	margin: 20px 0;
-}
-
-.cart__card-options, .cart__button-options {
- 	margin: 10px 0;
+	margin: .5em 0;
 }
 
 .cart__header {
 	font-size: 1.2em;
 	font-weight: 600;
-	margin-top: 10px;
+	margin-top: .25em;
+}
+@media screen and (max-width: 800px) {
+	.cart__header {
+		margin: 0;
+	}
 }
 
 .cart__goods{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	max-width: 450px;
 }
 
 .cart__square {
-  position:relative;
+  position: relative;
   border: 2px solid black; 
-  overflow:hidden;
-  height: 70px;
-  width: 70px;
+  overflow: hidden;
+  height: 69px;
+  width: 69px;
+}
+@media screen and (max-width: 800px) {
+	.cart__square {
+		height: 59px;
+  	width: 59px;
+	}
+}
+@media screen and (max-width: 800px) {
+	
 }
 
 .square__in-right, .square__in-left {
-	position:absolute;
-	background:black;
+	position: absolute;
+	background: black;
 	height: 2px;
 }
 
 .square__in-right {
-	transform:skewY(-45deg);
-	width: 196%;	
+	transform: skewY(-45deg);
+	width: 198%;	
 }
 
 .square__in-left {
 	top: 34px;
-  transform:skewY(45deg); 
+  transform: skewY(45deg); 
   width: 100%;
+}
+@media screen and (max-width: 800px) {
+	.square__in-left {
+		top: 29px;
+	}
 }
 
 .cart__description {
 	font-size: 0.5em;
-	padding-left: 40px;
+	padding-left: 30px;
 	text-align: justify;
 	width: calc(100% - 116px);
 }
+@media screen and (max-width: 800px) {
+	.cart__description {
+		padding-left: 20px;
+	}
+}
 
 .cart__mini-header {
-	font-size: 0.7em;
+	font-size: .7em;
 	font-weight: 600;
 }
+
+.cart__card-options, .cart__button-options {
+ 	margin: .25em 0;
+}
+@media screen and (max-width: 800px) {
+	.cart__button-options {
+ 		margin: .5em 0;
+	}
+}
+
 .cart__card-options {
-	font-size: 0.55em;
+	font-size: .55em;
 	font-weight: 600;
 }
 
 .cart__payment {
 	padding-left: 30px;
 }
+@media screen and (max-width: 800px){
+	.cart__payment {
+		padding-left: 0;
+	}
+}
 
 .cart__info-header, .cart__body {
-	margin: 10px 0;
+	margin: .25em 0;
 }
 
 .cart__logo {
 	margin: -30px 0 10px;
 	width: 100%; 
 }
+@media screen and (max-width: 800px){
+	.cart__logo {
+		margin: .5em 0;
+	}
+}
 
 .cart__icon {
 	float: right; 
-	width: 75px;
+	width: 1.875em;
 }
 
 .cart__info-header {
 	font-size: 0.8em;
 	font-weight: 600;
 }
+@media screen and (max-width: 800px){
+	.cart__info-header {
+		margin-top: 0;
+	}
+}
 
 .cart__body {
 	border: 2px solid black;
-	max-width: 350px;
+	max-width: 100%;
 	padding: 0 30px;
+}
+@media screen and (max-width: 1050px){
+	.cart__body {
+		padding: 0 20px;
+	}
 }
 
 .cart__input {
+	display: flex;
 	font-size: 0.55em;
 	margin: 20px 0;
 }
 
 .cart__label {
   margin-right: 15px;
+  width: calc(100% - 145px);
+  word-break: normal;
 }
 
 .cart__field {
 	font-size: 0.8em;
   float: right;
   width: 130px;
-}
-
-@media screen and (max-width: 980px) {
-	.cart__input {
-		display: flex;
-		flex-direction: column;
-	}
-	.cart__field {
-		width: 190px;
-	}
-}
-
-@media screen and (max-width: 750px) {
-	.cart {
-		display: flex;
-		flex-direction: column;
-		padding: 30px;
-		padding-bottom: 20px;
-	}
-
-	.cart__order, .cart__payment {
-		width: 100%;
-	}
-
-	.cart__order {
-		border-bottom: 2px solid black;
-		border-right: none;
-		margin-bottom: 30px;
-		padding-bottom: 30px;	
-		padding-right: 0;
-	}
-
-	.cart__payment {
-		margin-top: 30px;
-		padding-left: 0;
-	}
-
-	.cart__info-header {
-		margin-top: -20px;
-	}
-
-	.cart__input {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.cart__field {
-		width: 130px;
-	}
 }
