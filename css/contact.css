@@ -10,6 +10,12 @@
 		margin-top: 1.25em;
 	}
 }
+@media screen and (max-width: 500px) {
+	.contact {
+		justify-content: center;
+		margin-top: .9em;
+	}
+}
 
 .contact__header {
 	font-size: 0.6em;
@@ -38,5 +44,10 @@
 @media screen and (max-width: 550px) {
 	.contact__button {
 		padding: 0 25px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.contact__button {
+		padding: 0 10px;
 	}
 }

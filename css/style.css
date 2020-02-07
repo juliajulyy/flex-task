@@ -33,9 +33,19 @@
 		top: 0;
 	}
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
 	.page__wrapper {
 		font-size: 30px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.page__wrapper {
+		font-size: 28px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.page__wrapper {
+		font-size: 27px;
 	}
 }
 
@@ -46,6 +56,11 @@
 	font-size: 0.45em;
 	padding: 4px 5px;
 	width: auto;
+}
+@media screen and (max-width: 500px) {
+	.page__button {
+		height: 28px;
+	}	
 }
 
 .page__button:hover {
